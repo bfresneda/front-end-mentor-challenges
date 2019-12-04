@@ -1,0 +1,80 @@
+html body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1 {
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+    margin: 10px auto;
+}
+
+header h2 {
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin: 20px auto;
+}
+
+header h3 {
+    font-size: 15px;
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+    margin: 20px auto;
+}
+
+.jumbotron {
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    width: 450px;
+    height: 300px;
+}
+
+.bordafull {
+    border: solid #ffffff 1px;
+    border-radius: 20px;
+}
+
+.borda_cyan {
+    border-top: solid hsl(180, 62%, 55%) 5px;
+}
+
+.borda_vermelho {
+    border-top: solid hsl(0, 78%, 62%) 5px;
+}
+
+.borda_laranja {
+    border-top: solid hsl(34, 97%, 64%) 5px;
+}
+
+.borda_azul {
+    border-top: solid hsl(212, 86%, 64%) 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(5, 225px);
+    grid-gap: 25px;
+    margin: 0;
+}
+
+.gridsupervisor {
+    grid-column: 1 / 2;
+}
+
+.gridsteam {
+    grid-area: team;
+}
+
+.gridkarma {
+    grid-area: karma;
+}
+
+.gridcalculator {
+    grid-area: calc;
+}
