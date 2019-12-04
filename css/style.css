@@ -3,28 +3,32 @@ html body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 header h1 {
     text-align: center;
-    color: hsl(234, 12%, 34%);
-    font-weight: 200;
-    margin: 10px auto;
+    color: hsl(229, 6%, 66%);
+    font-weight: 100;
+    margin-top: 100px;
+    font-size: 40px;
 }
 
 header h2 {
     text-align: center;
     color: hsl(234, 12%, 34%);
     font-weight: 600;
-    margin: 20px auto;
+    font-size: 40px;
+    margim: 20px auto;
 }
 
 header h3 {
     font-size: 15px;
     text-align: center;
-    color: hsl(234, 12%, 34%);
+    color: hsl(229, 6%, 66%);
     font-weight: 200;
-    margin: 20px auto;
+    margin-bottom: 60px;
 }
 
 .jumbotron {
@@ -32,6 +36,23 @@ header h3 {
     padding: 10px;
     width: 450px;
     height: 300px;
+}
+
+.jumbotron h3 {
+    text-align: left;
+    font-size: 30px;
+    margin: 20px;
+    font-weight: 600;
+}
+
+.jumbotron p {
+    text-align: left;
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+}
+
+imagem {
+    right: 10px;
 }
 
 .bordafull {
@@ -57,24 +78,28 @@ header h3 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows: repeat(5, 225px);
+    grid-template-columns: repeat(6, 225px);
+    grid-template-rows: repeat(5, 150px);
     grid-gap: 25px;
-    margin: 0;
+    margin-left: 20;
 }
 
 .gridsupervisor {
     grid-column: 1 / 2;
+    grid-row: 2 / 4;
 }
 
-.gridsteam {
-    grid-area: team;
+.gridteam {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
 }
 
 .gridkarma {
-    grid-area: karma;
+    grid-column: 3 / 5;
+    grid-row: 3 / 6;
 }
 
 .gridcalculator {
-    grid-area: calc;
+    grid-column: 5 / 6;
+    grid-row: 2 / 4;
 }
